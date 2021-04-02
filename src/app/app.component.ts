@@ -3,11 +3,8 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  //styleUrls: ['./app.component.scss']
-  styles: [`
-    h3{color: dodgerblue}
-  `]
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-learning-app!!';
+
 }

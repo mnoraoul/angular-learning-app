@@ -1,0 +1,19 @@
+<div class="body">
+    <h2>Recipes</h2>
+    <mat-nav-list>
+        <a  mat-list-item *ngFor="let recipe of recipes">
+            <img [src]="recipe.imagePath" alt="{{recipe.name}}">
+            <h3 matLine color="primary"> {{recipe.name}} </h3>
+            <p matLine>
+                <span> {{recipe.description}} </span>
+                <span><app-recipe-item></app-recipe-item></span>
+            </p>
+            <hr>
+         </a>
+    </mat-nav-list>   
+    <button mat-flat-button color="primary"  (click)="addRecipe()">New Recipe</button>
+</div>
+
+
+
+

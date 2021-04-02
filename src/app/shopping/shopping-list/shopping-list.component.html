@@ -1,0 +1,12 @@
+
+<div class="container">
+    <app-shopping-form></app-shopping-form>
+    <br>
+    <mat-nav-list>
+        <mat-list-item *ngFor="let ingredient of ingredients">
+            <a href="#">{{ingredient.name}} ({{ingredient.amount}})</a>
+            <hr>
+         </mat-list-item>
+    </mat-nav-list>
+
+</div>
